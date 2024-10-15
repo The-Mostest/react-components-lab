@@ -16,15 +16,16 @@ const WeatherForecast = (props) => {
 
 
 
-        <h2>{props.day}</h2>
+
         <WeatherIcon
           src={props.img}
           alt={props.alt}
         />
-        {/* <WeatherData
-        conditions = {props.conditions}
-        time = {props.time}
-        /> */}
+        <WeatherData
+          conditions={props.conditions}
+          time={props.time}
+          day={props.day}
+        />
 
 
 
